@@ -17,31 +17,32 @@
     }
     .main-pic
     {
-      width: 180px;
+      width: 100%;
       margin-bottom: 12px;
     }
     .main-pic-AS
     {
-      width: 180px;
+      width: 100%;
       margin-bottom: 12px;
       padding-bottom: 65px;
     }
     .main-pic-IS
     {
-      width: 180px;
+      width: 100%;
       margin-bottom: 12px;
       padding-bottom: 50px;
     }
     .main-pic-YA
     {
-      width: 180px;
+      width: 100%;
       margin-bottom: 12px;
       padding-bottom: 0px;
     }
     .profile-preview
     {
       box-shadow: 1px 1px 10px rgba(96 , 96, 96, 1);
-      display: inline-block;
+      display: flex;
+      flex-direction: column;
       margin-right: 30px;
       vertical-align: top;
       margin-bottom: 30px;
@@ -98,12 +99,15 @@
     }
     .v-main-div
     {
-      margin: 90px;
-
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      align-items: center;
     }
     .hiding
     {
-      display: block;
+      display: grid;
+      grid-template-columns: 1fr;
       margin-top: 50px;
       margin-bottom: 50px;
     }
